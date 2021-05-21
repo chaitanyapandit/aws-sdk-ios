@@ -623,6 +623,8 @@ handleEventsForBackgroundURLSession:(NSString *)identifier
                                                                 _Nullable AWSS3TransferUtilityProgressBlock * _Nullable downloadProgressBlockReference,
                                                                 _Nullable AWSS3TransferUtilityDownloadCompletionHandlerBlock * _Nullable completionHandlerReference))downloadBlocksAssigner;
 
+- (void)cancelUploads;
+
 /**
  Assigns progress feedback and completion handler blocks. This method should be called when the app was suspended while the transfer is still happening.
  
